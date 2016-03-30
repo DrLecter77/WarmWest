@@ -25,7 +25,7 @@ escape(document.referrer)+((typeof(screen)=="undefined")?"":
 ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
 screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 ";"+Math.random();//--></script><!--/LiveInternet--> 
-
+  <!-- The following line loads the template JavaScript file located in the template folder. It's blank by default. -->
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
 (function (d, w, c) {
@@ -52,11 +52,13 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 })(document, window, "yandex_metrika_callbacks");
 </script>
 <noscript><div><img src="//mc.yandex.ru/watch/29079820" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+<!-- /Yandex.Metrika counter -->  
+	
 
 	<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/style.css" rel="stylesheet" type="text/css" />
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
 </head>
 <body >
@@ -69,15 +71,15 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 <script src="//yandex.st/jquery/cookie/1.0/jquery.cookie.min.js"></script>
 <script type="text/javascript">
 
-// jQuery(function($) {
-// 		if (!$.cookie('was2')) {
-// 		var delay_popup = 10000;
-// 		setTimeout("document.getElementById('parent_popup').style.display='none'", delay_popup); //Попап заблочен, для разблокирования прописать style.display='block'
-// 		$.cookie('was2', true, {
-// 			expires: 365,
-// 			path: '/'
-// 		  });
-// 	})
+jQuery(function($) {
+		if (!$.cookie('was2')) {
+		var delay_popup = 10000;
+		setTimeout("document.getElementById('parent_popup').style.display='none'", delay_popup); //Попап заблочен, для разблокирования прописать style.display='block'
+		//$.cookie('was2', true, {
+			// expires: 365,
+			// path: '/'
+		 //  });
+	})
 </script>
 
 <div style="width: 100%; height: 100%;">
@@ -99,14 +101,9 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 			
 			
 		<div class="car">
-		
 			<jdoc:include type="modules" name="position-7" style="rounded"/>
-			
 		</div>
 		</div>
-	
-	
-	
 	<div class="clr"></div>
 		</div>
 	
@@ -144,25 +141,21 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 				
 				<div class="clr"></div>
 			</div>
-		
-		
-		
-		
+
 		</div>
 	</div>
-	
+	<div class="line"></div><br>
 	<div class="navigaciya">
 		
 		<jdoc:include type="modules" name="navigation" />
 	</div>
-	
 	<div class="content">
 	<?php if ($this->countModules( 'slaider2' )) : ?> 
 						 <div class="slaider" style="width: 100%; ">
 							<jdoc:include type="modules" name="slaider2" />
 							
 						</div>
-	<?php endif;?>                    
+	<?php endif;?> 
 	<?php if ( $this->countModules( 'glavnaya' )) : ?>
 	
 	
@@ -202,31 +195,31 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 					</div><br>
 					
 					<div class="col-md-3 col-sm-6 col-xs-6 brand wow flipInY data-wow-duration="1.5s" data-wow-delay="0s"data-wow-offset="20" " id="brand1">
-						<img src="templates/warm-west/images/brands/bosch.png" class="img-responsive" alt="Responsive image">
+						<img src="images/brands/bosch.png" class="img-responsive" alt="Responsive image">
 					</div>
 					
 					<div class="col-md-3 col-sm-6 col-xs-6 brand wow flipInY d"ata-wow-duration="1.5s" data-wow-delay="0.2s"data-wow-offset="20" id="brand2">
-						<img src="templates/warm-west/images/brands/siemens.png" class="img-responsive" alt="Responsive image">
+						<img src="images/brands/siemens.png" class="img-responsive" alt="Responsive image">
 					</div>
 
 					 <div class="col-md-3 col-sm-6 col-xs-6 brand wow flipInY d"ata-wow-duration="1.5s" data-wow-delay="0.4s"data-wow-offset="20" id="brand3">
-						<img src="templates/warm-west/images/brands/miele.png" class="img-responsive" alt="Responsive image">
+						<img src="images/brands/miele.png" class="img-responsive" alt="Responsive image">
 					</div>
 					 <div class="col-md-3 col-sm-6 col-xs-6 brand wow flipInY d"ata-wow-duration="1.5s" data-wow-delay="0.6s"data-wow-offset="20" id="brand4">
-						<img src="templates/warm-west/images/brands/aeg.png" class="img-responsive" alt="Responsive image">
+						<img src="images/brands/aeg.png" class="img-responsive" alt="Responsive image">
 					</div>
 
 					<div class="col-md-3 col-sm-6 col-xs-6 brand wow flipInX" data-wow-duration="1.5s" data-wow-delay="0s"data-wow-offset="20" id="brand5">
-						<img src="templates/warm-west/images/brands/indesit.png" class="img-responsive" alt="Responsive image">
+						<img src="images/brands/indesit.png" class="img-responsive" alt="Responsive image">
 					</div>
 					 <div class="col-md-3 col-sm-6 col-xs-6 brand wow flipInX" data-wow-duration="1.5s" data-wow-delay="0.4s"data-wow-offset="20" id="brand6">
-						<img src="templates/warm-west/images/brands/ariston.png" class="img-responsive" alt="Ariston">
+						<img src="images/brands/ariston.png" class="img-responsive" alt="Ariston">
 					</div>
 					 <div class="col-md-3 col-sm-6 col-xs-6 brand wow flipInX" data-wow-duration="1.5s" data-wow-delay="0.6s"data-wow-offset="20" id="brand7">
-						<img src="templates/warm-west/images/brands/samsung.png" class="img-responsive" alt="Responsive image">
+						<img src="images/brands/samsung.png" class="img-responsive" alt="Responsive image">
 					</div>
 					 <div class="col-md-3 col-sm-6 col-xs-6 brand wow flipInX" data-wow-duration="1.5s" data-wow-delay="0.8s"data-wow-offset="20" id="brand8">
-						<img src="templates/warm-west/images/brands/electrolux.png" class="img-responsive" alt="Responsive image">
+						<img src="images/brands/electrolux.png" class="img-responsive" alt="Responsive image">
 					</div>
 					
 				</div><br><br>
@@ -235,8 +228,8 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 	</div>
 	<?php endif;?>
 			<div class="conainer">
-<?php if ($this->countModules( 'news_right' ) && $this->countModules( 'slaider' )) : ?>                    
-					<div class="row" style="box-shadow: 1px 1px 10px #115982; border-radius: 5px;">
+<?php if ($this->countModules( 'news_right' ) && $this->countModules( 'slaider' )) : ?>
+					<br><div class="row" style="box-shadow: 1px 1px 10px #115982; border-radius: 5px;">
 						
 						<div style="width: 40%; float:left;">
 							
@@ -251,7 +244,25 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 					
 					</div>
 	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-	<!-- <div class="row">
+	<br><br><p style="color: #A02929; font-size: 22px; text-align: center">При заказе монтажа с покупкой оборудования, пусконаладочные работы - бесплатно. </p>
+	<br><br>
+	<div style="text-align: center;"><h1 style="color: #115982; text-align: center; margin: 10px 0; font-size: 20px;">ПОЧЕМУ BUDERUS?	</h1></div>
+	<ul class="actions">
+
+			<li class="edit-icon">
+			<span class="hasTip" title="Изменить материал :: Опубликовано&lt;br /&gt;08.03.2015&lt;br /&gt;Автор: Administrator"><a href="/component/content/?task=article.edit&amp;a_id=68&amp;return=aHR0cCUzQSUyRiUyRndhcm0td2VzdC5ydSUyRg==" ><img src="/media/system/images/edit.png" alt="Изменить"  /></a></span>
+			</li>
+	</ul>
+
+	<div style="text-align: justify;">
+	<p style="text-align: justify;"><span style="color: #012bc2;"><br><img src="/images/AmRS4MMQFes.jpg" border="0" alt="Котлы Buderus" title="Buderus" style="float: left; margin: 0px 10px 5px 0px;" />Buderus «Будерус» - немецкая компания, которая является гарантией качества, надежности и долговечности, активно продвигающая свои передовые технологии на Российский рынок. <br />Оборудование Buderus позволяет в значительной мере снижать потребление энергии, но при этом обладает высокой производительностью, простотой эксплуатации и обслуживания. Buderus – это ведущий поставщик инновационной энергоэффективной отопительной техники и систем комфортного климата. Вместе с техникой для отопления, компания Buderus предлагает полный спектр комплектующих и принадлежностей.</span></p>
+	<span style="color: #012bc2;">Компания WarmWest предлагает полный спектр оборудования для отопления Вашего дома от компании Buderus: настенные котлы, газовые котлы, водонагреватели, системы управления и многое другое. В наших разделах размещены краткие обзоры котельного оборудования компании Buderus, которые помогут Вам сделать правильный выбор.</span>
+	</div>
+	<br>
+	<div class="line"></div>
+	<div style="clear: both;"></div>
+	<br>
+<!-- 	<div class="row">
 		<div id="shema">
 		
 		<h4 style="text-align: center; color: #115982;">Наш спектр услуг</h4>
@@ -300,7 +311,7 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 		   </div>
 		</div>
 		
-	
+		
 		
 		<script type="text/javascript">
 			jQuery(function() {
@@ -316,8 +327,8 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 				);
 			});
 		</script>
-	</div>
- -->
+	</div> -->
+
 	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 					<!-- <div class="line"></div>
 					<div class="row">
@@ -329,6 +340,8 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 					
 					
 <?php endif;?>
+
+
 <?php if ( $this->countModules( 'forma_specifik' )) : ?>
 	<div class="line"></div>
 	
@@ -337,6 +350,7 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 		<jdoc:include type="modules" name="forma_specifik" style="rounded" />
 		<div class="clr"></div>
 		</div>
+
 	<div class="clr"></div>
 	</div>
 <?php endif;?>
@@ -464,7 +478,7 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 	<div class="clr"></div>
 </div>
 
-<?php endif;?>         
+<?php endif;?>     
 	
 <?php if ( $this->countModules( 'menu_katalog' )) : ?>
 <div class="line"></div>     
@@ -476,8 +490,11 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 	<div class="clr"></div>
 	</div>
 <?php endif;?>    
-
+	
+	
+  
 </div>
+<br><br>
 <footer>
 <div class="conainer">
 	<div class="left">
@@ -520,35 +537,7 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 
 </div>
 
-<script type="text/javascript">
-<!--
-  jQuery(document).ready(function(){
-	 
-	   
-	   
-	   
-	 if (jQuery('#miniK2StoreCart').find('*').length > 0) {
-		 
-		   jQuery('#miniCart').slideDown(100);
-		   
-	 }
-	   
-	   jQuery('#input_user').toggle(function(){
-		
-		jQuery('.input_user').slideDown(100);
-		
-		
-	   },function(){
-		
-		jQuery('.input_user').slideUp(100);
-		
-	   })
-	   
-
-  })
--->
-</script>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 			$( "h3:contains('МОНТАЖНЫЕ РАБОТЫ ПО КОТЕЛЬНОЙ')" ).append("<a href='#second'></a>");
@@ -568,6 +557,7 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 		}
 		})
 </script>
+
 <style type="text/css">
 .brand:hover{
 	transform: scale(1.2);
